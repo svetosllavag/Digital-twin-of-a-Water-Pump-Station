@@ -28,7 +28,7 @@ This is an operational and decision-support digital twin, not a full hydraulic s
 **Polygon layers**
 - Supply zones (2–5 polygons representing consumer areas)
 
-### (attributes)
+### Attributes
 
 
 **Pumps**
