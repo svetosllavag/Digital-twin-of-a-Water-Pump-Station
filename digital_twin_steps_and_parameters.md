@@ -14,13 +14,9 @@ This is an operational and decision-support digital twin, not a full hydraulic s
 
 ---
 
-## Step 1 — Create the pump station model in ArcGIS Pro
-
-### 1. Create project structure
 - ArcGIS Pro project
 - File geodatabase
 
-### 2. Create station layers
 **Point layers**
 - Pumps (3 points: Pump A, Pump B, Pump C)
 - Reservoir (1 point)
@@ -32,8 +28,8 @@ This is an operational and decision-support digital twin, not a full hydraulic s
 **Polygon layers**
 - Supply zones (2–5 polygons representing consumer areas)
 
-### 3. Add the digital twin fields (attributes)
-Minimum recommended fields:
+### (attributes)
+
 
 **Pumps**
 - `AssetID`
@@ -68,9 +64,9 @@ Minimum recommended fields:
 
 ---
 
-## Step 2 — Prepare 4 operational scenarios
+## 4 operational scenarios
 
-The prototype includes 4 predefined station scenarios (saved station states):
+The prototype includes 4 predefined station scenarios:
 
 1. **Normal Operation**
    - Pump A: ON  
@@ -101,7 +97,7 @@ Each scenario includes different values for:
 
 ---
 
-## Step 3 — Visualization in ArcGIS Pro
+## Visualization in ArcGIS Pro
 
 - Pumps colored by `Status`
 - Backup pump visually distinct from primary pumps
@@ -110,9 +106,9 @@ Each scenario includes different values for:
 
 ---
 
-## Step 4 — Publish the station to ArcGIS Online
 
-## Step 5 — Create dashboards (ArcGIS Dashboards)
+
+## ArcGIS Dashboards
 
 ### Dashboard 1 — Station Overview
 Purpose: fast control-room view
@@ -138,9 +134,9 @@ Purpose: efficiency and cost awareness
 
 ---
 
-## Step 6 — Web app interface (Experience Builder)
+## Web app interface (Experience Builder)
 
-Create a simple web app with an “Experiment Control Panel”:
+A simple web app with an “Experiment Control Panel”:
 - Normal Operation
 - Backup Exercise
 - Energy Saving
@@ -150,7 +146,7 @@ Each button filters by `Scenario` and updates the map and dashboards.
 
 ---
 
-## Step 7 (Optional) — Telemetry integration from a mini physical model
+## Telemetry integration from a mini physical model
 
 A small Arduino-based pump station model can generate real telemetry values (level, current, turbidity).  
 Data can be logged to CSV and used in the digital twin for demonstration.
